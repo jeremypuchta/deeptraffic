@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5070c6e7-8ece-4c07-9ca8-5994748e13c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/concept_paper/Unilogo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/concept_paper/chapters/entwurf.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/concept_paper/chapters/introduction.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/concept_paper/paper.aux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/concept_paper/paper.fdb_latexmk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/concept_paper/paper.fls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/concept_paper/paper.lof" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/concept_paper/paper.lot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/concept_paper/paper.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/concept_paper/paper.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/concept_paper/paper.synctex.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/concept_paper/paper.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/concept_paper/paper.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ta_frontend/.gitignore" beforeDir="false" />
-    </list>
+    <list default="true" id="5070c6e7-8ece-4c07-9ca8-5994748e13c6" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,17 +9,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="530" selection-start-line="530" selection-end-line="530" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -78,6 +51,11 @@
             <path>
               <item name="traffic_analysis_with_deep_learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="traffic_analysis_with_deep_learning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="traffic_analysis_with_deep_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="traffic_analysis_with_deep_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="concept_paper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -139,18 +117,17 @@
       <workItem from="1557157559059" duration="5676000" />
       <workItem from="1557212942587" duration="4000" />
       <workItem from="1558006887600" duration="210000" />
-      <workItem from="1558351016731" duration="211000" />
+      <workItem from="1558351016731" duration="377000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17468000" />
+    <option name="totallyTimeSpent" value="17634000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="821" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15379113" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15379113" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -164,7 +141,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.4060241" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" visible="true" weight="0.39231825" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" visible="true" weight="0.39231825" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
