@@ -1,0 +1,118 @@
+\documentclass[12pt,a4paper, halfparskip]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[bookmarksnumbered,pdftitle={Name}]{hyperref}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{lmodern}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{pifont}
+\usepackage{amssymb}
+\usepackage{adjustbox}
+\usepackage{cite}
+
+\usepackage{geometry}
+\geometry{a4paper, top=25mm, left=40mm, right=40mm, bottom=30mm,
+headsep=10mm, footskip=12mm}
+
+\title{Funktionsumfang und Leistungsfähigkeit kommerzieller und wissenschaftlicher NLP-Plattformen im Web}
+\author{AUTOREN EINTRAGEN}
+\renewcommand*{\titlepagestyle}{empty}
+
+\definecolor{background}{HTML}{FFFFFF}
+
+\lstdefinelanguage{json} {
+    basicstyle=\normalfont\ttfamily,
+    numbers=left,
+    numberstyle=\scriptsize,
+    stepnumber=1,
+    numbersep=8pt,
+    showstringspaces=false,
+    breaklines=true,
+    frame=lines,
+    backgroundcolor=\color{background},
+}
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+	\includegraphics[width=1\textwidth]{Unilogo}\par\vspace{1cm}
+	{\scshape\LARGE Universität Leipzig \par}
+	\vspace{0.5cm}
+	{\scshape\Large Abteilung Datenbanken \par}
+	\vspace{0.2cm}
+	{\scshape\large Big Data - Praktikum \par}
+	\vspace{1cm}
+	{\huge\bfseries Konzeptioneller Entwurf zum Thema \\ \textit{"Traffic Analysis with Deep Learning"} \par}
+	\vspace{1cm}
+	{\Large Ali Al-Ali und Jeremy Puchta \par}
+
+	\vfill
+	
+	{\large \today\par}
+\end{titlepage}
+
+\newpage
+
+\thispagestyle{empty}
+\pagenumbering{Roman}
+\tableofcontents
+\addcontentsline{toc}{section}{Inhaltsverzeichnis}
+
+\newpage
+\pagestyle{empty}
+\listoffigures
+\addcontentsline{toc}{section}{Abbildungsverzeichnis}
+
+\newpage
+\listoftables
+\addcontentsline{toc}{section}{Tabellenverzeichnis}
+
+\newpage
+\pagenumbering{arabic}
+\input{chapters/introduction.tex}
+\input{chapters/entwurf.tex}
+
+\newpage
+\pagenumbering{arabic}
+
+% Literaturverzeichnis
+\newpage
+\pagenumbering{Roman}
+\setcounter{page}{4}
+\pagestyle{empty}
+\bibliographystyle{unsrt}
+\addcontentsline{toc}{section}{Literaturverzeichnis}
+\renewcommand{\refname}{Literaturverzeichnis} 
+\bibliography{sources}
+
+% ABKÜRZUNGSVERZEICHNIS
+\newpage
+\pagestyle{empty}
+\section*{Abkürzungsverzeichnis}
+\addcontentsline{toc}{section}{Abkürzungsverzeichnis}
+<falls viele Abkürzungen vorkommen>
+\begin{description}
+	\item [TLA] Three Letter Acronym
+\end{description}
+
+% GLOSSAR
+\newpage
+\pagestyle{empty}
+\section*{Glossar}
+\addcontentsline{toc}{section}{Glossar}
+\begin{description}
+	\item[Angreifer] "`Eine Person, die eine ihm bekannte Verwundbarkeit ausnutzt, um ein Computersystem anzugreifen"'. 
+\end{description}
+
+% \end{footnotesize}
+
+\end{document}

@@ -1,0 +1,27 @@
+\newpage
+\section{Einleitung}
+
+Die vorliegende Ausarbeitung dokumentiert die Konzeption des Projekts \textit{Traffic Analysis with Deep Learning}.
+
+Das Ziel des Projekts ist die Erstellung einer Webanwendung, welche Daten über das 
+Verkehrsaufkommen am Leipziger Ring sammelt, statistisch analysiert und visualisiert.
+Als Datengrundlage werden die unter \url{https://www.l.de/webcam.html} öffentlich bereitgestellten Webcambilder
+des Leipziger Rings verwendet. 
+Diese werden regelmäßig mithilfe eines Webscraping-Algorithmus abgerufen und dem Datensatz hinzugefügt (\textbf{T1}). 
+
+Innerhalb der gesammelten Bilddateien werden die für das aktuelle Verkehrsaufkommen relevanten Objekte erfasst.
+Dazu wird ein für den Anwendungsfall der Objekterkennung vortrainiertes neuronales Netz implementiert.
+Der Leistungsstand des neuronalen Netzes wird im ersten Schritt untersucht, bevor im zweiten Schritt eine
+Verbesserung der Leistungsfähigkeit vorgenommen wird (\textbf{T2}). 
+Anschließend erfolgt die Transformation der gesammelten Bilddaten in Zeitreihendaten (\textbf{T3}). 
+
+Abschließend wird der Zeitreihendatenbestand für die nachfolgende Analyse und Visualisierung innerhalb der 
+Webanwendung aufbereitet. 
+Die Webanwendung stellt ein Dashboard zur Verfügung, welches die aufbereiteten Verkehrsdaten grafisch 
+visualisiert (\textbf{T4}). 
+
+Die aufbereiteten Verkehrsdaten geben Informationen über die gegenwärtige Verkehrslage am Leipziger Ring preis 
+und ermöglichen es Rückschlüsse auf mögliche Über- oder Unterlastungen des betrachteten Verkehrsbereich zu ziehen.
+Aus diesen Analysen ist es möglich Handlungen für eine Verbesserung der Verkehrssituation abzuleiten.  
+Daher sind die Ergebnisse der Ausarbeitung von Interesse für politische Amtsträger, Studenten verschiedener 
+Fachrichtungen sowie interessierte Bürger der Stadt Leipzig.
