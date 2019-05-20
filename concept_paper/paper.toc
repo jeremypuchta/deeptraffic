@@ -7,5 +7,5 @@
 \contentsline {section}{\numberline {3}Architektur}{2}{section.3}% 
 \contentsline {section}{\numberline {4}Ablauf}{2}{section.4}% 
 \contentsline {section}{Literaturverzeichnis}{IV}{section.4}% 
-\contentsline {section}{Abk\IeC {\"u}rzungsverzeichnis}{IV}{section*.4}% 
-\contentsline {section}{Glossar}{V}{section*.5}% 
+\contentsline {section}{Abk\IeC {\"u}rzungsverzeichnis}{V}{section*.5}% 
+\contentsline {section}{Glossar}{VI}{section*.6}% 
