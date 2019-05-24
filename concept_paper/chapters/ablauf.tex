@@ -1,1 +1,37 @@
 \section{Ablauf}
+
+Dieses Kapitel richtet den Blick auf den Ablauf des Systems. 
+Dabei ist der Ablauf unterteilt in zwei unabhängige Phasen:
+
+\begin{enumerate}
+    \item Trainings- und Testingphase des neuronalen Netzes
+    \item Betriebsphase der Webanwendung
+\end{enumerate}
+
+Zunächst wird der Ablauf der ersten Phase vorgestellt.
+Diese befasst sich mit dem Training und Testing des neuronalen Netzes. 
+Das verwendete neuronale Netz basiert auf der YOLO-Architektur, welche in [QUELLE] dokumentiert ist.
+Weiterhin wird ein vortrainiertes Model zur Objekterkennung verwendet.
+Dieses bietet bereits die Möglichkeit 80 Klassen zu erkennen und zu klassifizieren. 
+Aufbauend auf diesem Fundament, wird das Model entsprechend der im Rahmen des Projekts aversierten Domäne optimiert.
+Dabei spricht man von \textit{Training}.
+
+Im Rahmen der Trainingsphase wird der zusammengestellte und mit Labeln versehene Datensatz verwendet, um 
+das neuronale Netz zu trainieren. 
+Hierbei werden die Bilder iterativ durch das neuronale Netz via \textit{Forward Pass}-Prozess [REFERENZ] geschickt.
+Dabei detektiert und klassifiziert das neuronale Netz die im Bild vorliegenend Objekte und vergleicht anschließend
+die Resultate mit den im Input-Datensatz manuell gelabelten Objekten.
+Im Fehlerfall passt das neuronale Netz die Kantengewichte mit Hilfe der \textit{Back Propagation}-Technik [REFERENZ] an.
+Zur Validierung des neuronalen Netzes werden dem Netz unbekannte Bilder als Input bereitgestellt.
+Damit wird überprüft, ob das Netz in der Lage ist auf unbekannte Input-Daten zu reagieren und ob beispielsweise eine 
+Überanpassung existiert.
+
+Das Ergebnis der Trainingsphase ist ein auf den Projektanwendungsfall spezialisiertes Model.
+Dieses Model wird im Folgenden in das Backend der Webanwendung integriert.
+Zur Laufzeit der Webanwendung wird stündlich das aktuell veröffentlichte Webcambild (siehe \url{https://www.l.de/webcam.html}) gecrawled.
+Dieses wird vom Flask-Backend durch das neuronale Netz geschickt. 
+Das Resulat stellt die enthaltenen Objekte in einer JSON-Datei dar. 
+Die enthaltenen relevanten Werte werden aus der JSON-Datei extrahiert und in eine Datenbank gespeichert.
+Der gesammelte Datenbestand wird im Anschluss aufbereitet, harmonisiert und analysiert, bevor sie an das Frontend
+geschickt werden.
+Im Frontend werden die aus den Daten resultierenden Statistiken nutzerfreundlich visualisiert.

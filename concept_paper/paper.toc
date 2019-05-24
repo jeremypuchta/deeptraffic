@@ -1,11 +1,7 @@
 \babel@toc {ngerman}{}
 \contentsline {section}{Inhaltsverzeichnis}{I}{section*.1}% 
 \contentsline {section}{Abbildungsverzeichnis}{II}{section*.2}% 
-\contentsline {section}{Tabellenverzeichnis}{III}{section*.3}% 
 \contentsline {section}{\numberline {1}Einleitung}{1}{section.1}% 
-\contentsline {section}{\numberline {2}Technologiestack}{2}{section.2}% 
-\contentsline {section}{\numberline {3}Architektur}{2}{section.3}% 
-\contentsline {section}{\numberline {4}Ablauf}{2}{section.4}% 
-\contentsline {section}{Literaturverzeichnis}{IV}{section.4}% 
-\contentsline {section}{Abk\IeC {\"u}rzungsverzeichnis}{V}{section*.5}% 
-\contentsline {section}{Glossar}{VI}{section*.6}% 
+\contentsline {section}{\numberline {2}Architektur}{2}{section.2}% 
+\contentsline {section}{\numberline {3}Ablauf}{3}{section.3}% 
+\contentsline {section}{Literaturverzeichnis}{III}{Item.2}% 

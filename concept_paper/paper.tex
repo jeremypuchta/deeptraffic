@@ -73,13 +73,8 @@ headsep=10mm, footskip=12mm}
 \addcontentsline{toc}{section}{Abbildungsverzeichnis}
 
 \newpage
-\listoftables
-\addcontentsline{toc}{section}{Tabellenverzeichnis}
-
-\newpage
 \pagenumbering{arabic}
 \input{chapters/introduction.tex}
-\input{chapters/techstack.tex}
 \input{chapters/architecture.tex}
 \input{chapters/ablauf.tex}
 
@@ -89,31 +84,12 @@ headsep=10mm, footskip=12mm}
 % Literaturverzeichnis
 \newpage
 \pagenumbering{Roman}
-\setcounter{page}{4}
+\setcounter{page}{3}
 \pagestyle{empty}
 \bibliographystyle{unsrt}
 \addcontentsline{toc}{section}{Literaturverzeichnis}
 \renewcommand{\refname}{Literaturverzeichnis} 
 \bibliography{sources}
-
-% ABKÜRZUNGSVERZEICHNIS
-\newpage
-\pagestyle{empty}
-\section*{Abkürzungsverzeichnis}
-\addcontentsline{toc}{section}{Abkürzungsverzeichnis}
-<falls viele Abkürzungen vorkommen>
-\begin{description}
-	\item [TLA] Three Letter Acronym
-\end{description}
-
-% GLOSSAR
-\newpage
-\pagestyle{empty}
-\section*{Glossar}
-\addcontentsline{toc}{section}{Glossar}
-\begin{description}
-	\item[Angreifer] "`Eine Person, die eine ihm bekannte Verwundbarkeit ausnutzt, um ein Computersystem anzugreifen"'. 
-\end{description}
 
 % \end{footnotesize}
 

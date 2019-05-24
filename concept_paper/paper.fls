@@ -1,9 +1,9 @@
-PWD /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper
+PWD /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper
 INPUT /usr/local/texlive/2019/texmf.cnf
 INPUT /usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/paper.tex
-OUTPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/paper.log
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/paper.tex
+OUTPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/paper.log
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/koma-script/scrartcl.cls
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/koma-script/scrartcl.cls
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -134,9 +134,9 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/varwidth/varwidth.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/varwidth/varwidth.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/cite/cite.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/cite/cite.sty
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/paper.aux
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/paper.aux
-OUTPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/paper.aux
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/paper.aux
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/paper.aux
+OUTPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/paper.aux
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm
@@ -152,21 +152,21 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/paper.out
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/paper.out
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/paper.out
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/paper.out
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/paper.out
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/paper.out
-OUTPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/paper.out
-OUTPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/paper.pdf
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/paper.out
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/paper.out
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/paper.out
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/paper.out
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/paper.out
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/paper.out
+OUTPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/paper.out
+OUTPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/paper.pdf
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/bookmark.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/bookmark.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/Unilogo.jpg
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/Unilogo.jpg
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/Unilogo.jpg
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/Unilogo.jpg
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/Unilogo.jpg
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/Unilogo.jpg
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmcsc10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmcsc10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmcsc10.tfm
@@ -182,21 +182,11 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmss.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmss12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/paper.toc
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/paper.toc
-OUTPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/paper.toc
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/paper.lof
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/paper.lof
-OUTPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/paper.lof
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/paper.lot
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/paper.lot
-OUTPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/paper.lot
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/chapters/introduction.tex
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/chapters/introduction.tex
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmtt.fd
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmtt.fd
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmtt12.tfm
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/paper.toc
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/paper.toc
+OUTPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/paper.toc
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/paper.lof
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/paper.lof
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/ot1lmr.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/ot1lmr.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmr12.tfm
@@ -225,18 +215,26 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+OUTPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/paper.lof
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/chapters/introduction.tex
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/chapters/introduction.tex
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmtt.fd
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmtt.fd
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmtt12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/chapters/techstack.tex
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/chapters/techstack.tex
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/chapters/architecture.tex
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/chapters/architecture.tex
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/chapters/ablauf.tex
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/chapters/ablauf.tex
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/paper.bbl
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/paper.bbl
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/paper.aux
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/paper.out
-INPUT /Users/ali/PycharmProjects/Traffic-Analysis-with-Deep-Learning/concept_paper/paper.out
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/chapters/architecture.tex
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/chapters/architecture.tex
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/resources/images/bigdata-prak-arch_recent.jpg
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/resources/images/bigdata-prak-arch_recent.jpg
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/resources/images/bigdata-prak-arch_recent.jpg
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/chapters/ablauf.tex
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/chapters/ablauf.tex
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/paper.bbl
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/paper.bbl
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/paper.aux
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/paper.out
+INPUT /Users/jeremy/Uni/Master/2. Semester/Anwendungsbezogene Datenbankkonzepte/Praktikum Big Data/traffic_analysis_with_deep_learning/concept_paper/paper.out
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb
