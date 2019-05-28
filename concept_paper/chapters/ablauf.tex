@@ -10,7 +10,7 @@ Dabei ist der Ablauf unterteilt in zwei unabhängige Phasen:
 
 Zunächst wird der Ablauf der ersten Phase vorgestellt.
 Diese befasst sich mit dem Training und Testing des neuronalen Netzes. 
-Das verwendete neuronale Netz basiert auf der YOLO-Architektur, welche in [QUELLE] dokumentiert ist.
+Das verwendete neuronale Netz basiert auf der YOLO-Architektur, welche in \cite{DBLP:journals/corr/RedmonDGF15} dokumentiert ist.
 Weiterhin wird ein vortrainiertes Model zur Objekterkennung verwendet.
 Dieses bietet bereits die Möglichkeit 80 Klassen zu erkennen und zu klassifizieren. 
 Aufbauend auf diesem Fundament, wird das Model entsprechend der im Rahmen des Projekts aversierten Domäne optimiert.
@@ -18,10 +18,10 @@ Dabei spricht man von \textit{Training}.
 
 Im Rahmen der Trainingsphase wird der zusammengestellte und mit Labeln versehene Datensatz verwendet, um 
 das neuronale Netz zu trainieren. 
-Hierbei werden die Bilder iterativ durch das neuronale Netz via \textit{Forward Pass}-Prozess [REFERENZ] geschickt.
+Hierbei werden die Bilder iterativ durch das neuronale Netz via \textit{Forward Pass}-Prozess geschickt.
 Dabei detektiert und klassifiziert das neuronale Netz die im Bild vorliegenend Objekte und vergleicht anschließend
 die Resultate mit den im Input-Datensatz manuell gelabelten Objekten.
-Im Fehlerfall passt das neuronale Netz die Kantengewichte mit Hilfe der \textit{Back Propagation}-Technik [REFERENZ] an.
+Im Fehlerfall passt das neuronale Netz die Kantengewichte mit Hilfe der \textit{Back Propagation}-Technik an.
 Zur Validierung des neuronalen Netzes werden dem Netz unbekannte Bilder als Input bereitgestellt.
 Damit wird überprüft, ob das Netz in der Lage ist auf unbekannte Input-Daten zu reagieren und ob beispielsweise eine 
 Überanpassung existiert.
