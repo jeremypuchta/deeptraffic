@@ -3,7 +3,7 @@ version: "3.5"
 services:
 
   react-dev:
-    container_name: 'frontend-container'
+    container_name: 'frontend_container'
     build:
       context: ./ta_frontend
       dockerfile: Dockerfile
