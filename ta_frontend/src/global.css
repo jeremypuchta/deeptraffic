@@ -1,3 +1,15 @@
+html, body {
+  height: 100%;
+}
+
+html {
+  box-sizing: content-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +18,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(246, 247, 248);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid transparent;
+}
+
+ul {
+  list-style: none;
 }
 
 code {

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 import './App.css';
 
@@ -12,10 +13,16 @@ const Main = styled.main`
   margin: 0 auto;
 `;
 
+const Content = styled.div`
+  flex-grow: 1;
+`
+
 function App() {
   return (
     <Main>
       <Header />
+      <Content />
+      <Footer />
     </Main>
   );
 }
