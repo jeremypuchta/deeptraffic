@@ -1,6 +1,5 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
-import moment from 'moment';
 
 const chartData = [
   { time: 1553810400, cars: 4, trucks: 0, busses: 1, motorcycles: 0 },
@@ -21,23 +20,23 @@ class TimeSeriesChart extends React.Component {
             label: 'Cars',
             data: [
               {
-                x: new Date(1553810400),
+                x: new Date(1556470800),
                 y: 4
               },
               {
-                x: new Date(1553814000),
+                x: new Date(1556474400),
                 y: 2
               },
               {
-                x: new Date(1553817600),
+                x: new Date(1556478000),
                 y: 3
               },
               {
-                x: new Date(1553821200),
+                x: new Date(1556481600),
                 y: 4
               },
               {
-                x: new Date(1553824800),
+                x: new Date(1556485200),
                 y: 1
               }
             ],
@@ -128,12 +127,14 @@ class TimeSeriesChart extends React.Component {
         ]
       },
       options: {
+        responsive: true,
         scales: {
           xAxes: [
             {
               type: 'time',
               time: {
-                unit: 'hour'
+                parser: 'X',
+
               }
             }
           ]
@@ -144,7 +145,7 @@ class TimeSeriesChart extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={{ position: 'relative', width: '66%', margin: 'auto' }}>
         <Line data={this.state.data} options={this.state.options} />
       </div>
     );

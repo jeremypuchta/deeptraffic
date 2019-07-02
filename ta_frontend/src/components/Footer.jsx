@@ -4,8 +4,8 @@ import styled from 'styled-components';
 const StyledFooter = styled.footer`
   display: flex;
   padding: 1rem 0;
+  margin-top: 2rem;
   justify-content: center;
-  background-color: #fff;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 `;
 

@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 
-import Layout from './components/Layout';
-import TimeSeriesChart from './components/TimeSeriesChart';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
 
-function App() {
+const App = () => {
   return (
-    <Layout>
-      <TimeSeriesChart />
-    </Layout>
+    <BrowserRouter>
+      <div>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/about" component={AboutPage} />
+      </div>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

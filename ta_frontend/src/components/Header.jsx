@@ -1,13 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Nav from './Nav';
-
 const StyledHeader = styled.header`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 0 5rem;
+  margin-bottom: 1rem;
 `;
 
 const StyledTitle = styled.h1`
@@ -26,7 +25,6 @@ const Header = () => {
         <StyledTitle>DeepTraffic</StyledTitle>
         <StyledSubtitle>Analyzing Traffic with Deep Learning</StyledSubtitle>
       </div>
-      <Nav />
     </StyledHeader>
   );
 };
