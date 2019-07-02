@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const StyledHeader = styled.header`
@@ -22,7 +23,9 @@ const Header = () => {
   return (
     <StyledHeader>
       <div>
-        <StyledTitle>DeepTraffic</StyledTitle>
+        <Link to="/">
+          <StyledTitle>DeepTraffic</StyledTitle>
+        </Link>
         <StyledSubtitle>Analyzing Traffic with Deep Learning</StyledSubtitle>
       </div>
     </StyledHeader>
