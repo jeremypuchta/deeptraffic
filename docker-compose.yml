@@ -36,5 +36,13 @@ services:
     depends_on:
       - postgres
 
+  backend:
+    container_name: 'backend-container'
+    restart: always
+    build: ./ta_backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./ta_backend:/usr/src/app
 volumes:
   postgres_data:
