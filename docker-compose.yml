@@ -23,26 +23,18 @@ services:
     environment:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
-      - postgres_data:/var/lib/postgresql/data
-
-  pgadmin:
-    image: 'dpage/pgadmin4'
-    container_name: 'pgadmin_container'
-    ports:
-      - '5050:80'
-    environment:
-      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
-      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
-    depends_on:
-      - postgres
+      - postgres-data:/var/lib/postgresql/data
 
   backend:
-    container_name: 'backend-container'
+    container_name: 'backend_container'
     restart: always
     build: ./ta_backend
     ports:
       - "5000:5000"
     volumes:
       - ./ta_backend:/usr/src/app
+    depends_on:
+      - postgres
+
 volumes:
-  postgres_data:
+  postgres-data:
