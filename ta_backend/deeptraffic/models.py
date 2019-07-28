@@ -1,4 +1,4 @@
-from . import *
+from deeptraffic import db
 
 
 class Result(db.Model):
