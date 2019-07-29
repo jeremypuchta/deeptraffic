@@ -1,4 +1,11 @@
-from deeptraffic import db
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+
+
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://bdprak:admin@postgres_container/deeptraffic'
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+db = SQLAlchemy(app)
 
 
 class Result(db.Model):
@@ -20,3 +27,7 @@ class Result(db.Model):
 
     def __repr__(self):
         return f"Result('{self.created_at}', '{self.cars}', '{self.busses}', '{self.trucks}', '{self.motorcycles}')"
+
+
+if __name__ == "__main__":
+    app.run(debug=True, host="0.0.0.0")
