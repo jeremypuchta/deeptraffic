@@ -1,4 +1,4 @@
 flask
-requests
 flask-sqlalchemy
+flask-cors==3.0.8
 psycopg2

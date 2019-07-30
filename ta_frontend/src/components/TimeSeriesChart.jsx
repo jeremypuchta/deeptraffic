@@ -8,40 +8,85 @@ const ChartsContainer = styled.div`
   margin: auto;
 `;
 
-const options = {
-  xAxis: {
-    type: 'datetime'
-  },
-  series: [
-    {
-      name: 'cars',
-      data: [[1564354800000, 4], [1564358400000, 1]]
-    },
-    {
-      name: 'busses',
-      data: [[1564354800000, 0], [1564358400000, 1]]
-    },
-    {
-      name: 'trucks',
-      data: [[1564354800000, 2], [1564358400000, 1]]
-    },
-    {
-      name: 'motorcycles',
-      data: [[1564354800000, 0], [1564358400000, 3]]
-    }
-  ]
-};
+class TimeSeriesChart extends React.Component {
+  constructor(props) {
+    super(props);
 
-const TimeSeriesChart = () => {
-  return (
-    <ChartsContainer>
-      <HighchartsReact
-        highcharts={Highcharts}
-        constructorType={'stockChart'}
-        options={options}
-      />
-    </ChartsContainer>
-  );
-};
+    this.state = {
+      options: {
+        xAxis: {
+          type: 'datetime'
+        },
+        series: [
+          { name: 'cars', data: [] },
+          { name: 'busses', data: [] },
+          { name: 'trucks', data: [] },
+          { name: 'motorcycles', data: [] }
+        ],
+        rangeSelector: {
+          buttons: [
+            { type: 'hour', count: 1, text: '1h' },
+            { type: 'day', count: 1, text: '1d' },
+            { type: 'month', count: 1, text: '1m' },
+            { type: 'year', count: 1, text: '1y' },
+            { type: 'all', text: 'All' }
+          ]
+        }
+      }
+    };
+  }
+
+  componentDidMount() {
+    fetch('http://localhost:5000/day')
+      .then(response => response.json())
+      .then(this.processResults)
+      .then(this.updateSeries);
+  }
+
+  processResults(data) {
+    const result = [];
+    const carsArray = [];
+    const bussesArray = [];
+    const trucksArray = [];
+    const motorcyclesArray = [];
+
+    data.forEach(result => {
+      carsArray.push([result.time * 1000, result.cars]);
+      bussesArray.push([result.time * 1000, result.busses]);
+      trucksArray.push([result.time * 1000, result.trucks]);
+      motorcyclesArray.push([result.time * 1000, result.motorcycles]);
+    });
+
+    result.push([carsArray, bussesArray, trucksArray, motorcyclesArray]);
+    return result;
+  }
+
+  updateSeries = (result) => {
+    this.setState({
+      options: {
+        series: [
+          { name: 'cars', data: result[0][0] },
+          { name: 'busses', data: result[0][1] },
+          { name: 'trucks', data: result[0][2] },
+          { name: 'motorcycles', data: result[0][3] }
+        ]
+      }
+    });
+  };
+
+  render() {
+    const { options } = this.state;
+
+    return (
+      <ChartsContainer>
+        <HighchartsReact
+          highcharts={Highcharts}
+          constructorType={'stockChart'}
+          options={options}
+        />
+      </ChartsContainer>
+    );
+  }
+}
 
 export default TimeSeriesChart;
