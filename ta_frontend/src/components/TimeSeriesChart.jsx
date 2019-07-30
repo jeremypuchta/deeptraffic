@@ -1,155 +1,47 @@
 import React from 'react';
-import { Line } from 'react-chartjs-2';
+import Highcharts from 'highcharts/highstock';
+import HighchartsReact from 'highcharts-react-official';
+import styled from 'styled-components';
 
-const chartData = [
-  { time: 1553810400, cars: 4, trucks: 0, busses: 1, motorcycles: 0 },
-  { time: 1553814000, cars: 2, trucks: 0, busses: 0, motorcycles: 0 },
-  { time: 1553817600, cars: 3, trucks: 2, busses: 0, motorcycles: 1 },
-  { time: 1553821200, cars: 4, trucks: 0, busses: 1, motorcycles: 0 },
-  { time: 1553824800, cars: 1, trucks: 1, busses: 0, motorcycles: 1 }
-];
+const ChartsContainer = styled.div`
+  max-width: 1000px;
+  margin: auto;
+`;
 
-class TimeSeriesChart extends React.Component {
-  constructor(props) {
-    super(props);
+const options = {
+  xAxis: {
+    type: 'datetime'
+  },
+  series: [
+    {
+      name: 'cars',
+      data: [[1564354800000, 4], [1564358400000, 1]]
+    },
+    {
+      name: 'busses',
+      data: [[1564354800000, 0], [1564358400000, 1]]
+    },
+    {
+      name: 'trucks',
+      data: [[1564354800000, 2], [1564358400000, 1]]
+    },
+    {
+      name: 'motorcycles',
+      data: [[1564354800000, 0], [1564358400000, 3]]
+    }
+  ]
+};
 
-    this.state = {
-      data: {
-        datasets: [
-          {
-            label: 'Cars',
-            data: [
-              {
-                x: new Date(1556470800),
-                y: 4
-              },
-              {
-                x: new Date(1556474400),
-                y: 2
-              },
-              {
-                x: new Date(1556478000),
-                y: 3
-              },
-              {
-                x: new Date(1556481600),
-                y: 4
-              },
-              {
-                x: new Date(1556485200),
-                y: 1
-              }
-            ],
-            fill: false,
-            borderColor: 'red'
-          },
-          {
-            label: 'Trucks',
-            data: [
-              {
-                x: new Date(1553810400),
-                y: 0
-              },
-              {
-                x: new Date(1553814000),
-                y: 0
-              },
-              {
-                x: new Date(1553817600),
-                y: 2
-              },
-              {
-                x: new Date(1553821200),
-                y: 0
-              },
-              {
-                x: new Date(1553824800),
-                y: 1
-              }
-            ],
-            fill: false,
-            borderColor: 'blue'
-          },
-          {
-            label: 'Busses',
-            data: [
-              {
-                x: new Date(1553810400),
-                y: 1
-              },
-              {
-                x: new Date(1553814000),
-                y: 0
-              },
-              {
-                x: new Date(1553817600),
-                y: 0
-              },
-              {
-                x: new Date(1553821200),
-                y: 1
-              },
-              {
-                x: new Date(1553824800),
-                y: 0
-              }
-            ],
-            fill: false,
-            borderColor: 'green'
-          },
-          {
-            label: 'Motorcycles',
-            data: [
-              {
-                x: new Date(1553810400),
-                y: 0
-              },
-              {
-                x: new Date(1553814000),
-                y: 0
-              },
-              {
-                x: new Date(1553817600),
-                y: 1
-              },
-              {
-                x: new Date(1553821200),
-                y: 0
-              },
-              {
-                x: new Date(1553824800),
-                y: 1
-              }
-            ],
-            fill: false,
-            borderColor: 'yellow'
-          }
-        ]
-      },
-      options: {
-        responsive: true,
-        scales: {
-          xAxes: [
-            {
-              type: 'time',
-              time: {
-                parser: 'X',
-
-              }
-            }
-          ]
-        }
-      }
-    };
-  }
-
-  render() {
-    return (
-      <div style={{ position: 'relative', width: '66%', margin: 'auto' }}>
-        <Line data={this.state.data} options={this.state.options} />
-      </div>
-    );
-  }
-}
+const TimeSeriesChart = () => {
+  return (
+    <ChartsContainer>
+      <HighchartsReact
+        highcharts={Highcharts}
+        constructorType={'stockChart'}
+        options={options}
+      />
+    </ChartsContainer>
+  );
+};
 
 export default TimeSeriesChart;
