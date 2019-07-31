@@ -31,6 +31,9 @@ class TimeSeriesChart extends React.Component {
             { type: 'year', count: 1, text: '1y' },
             { type: 'all', text: 'All' }
           ]
+        },
+        time: {
+          useUTC: false
         }
       }
     };
@@ -61,7 +64,7 @@ class TimeSeriesChart extends React.Component {
     return result;
   }
 
-  updateSeries = (result) => {
+  updateSeries = result => {
     this.setState({
       options: {
         series: [
