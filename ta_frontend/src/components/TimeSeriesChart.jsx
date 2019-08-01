@@ -73,7 +73,7 @@ class TimeSeriesChart extends React.Component {
   }
 
   visualizeData = () => {
-    fetch('http://localhost:5000/data')
+    fetch('http://localhost:5000/all')
       .then(response => response.json())
       .then(this.processResults)
       .then(this.updateSeries);
@@ -87,10 +87,10 @@ class TimeSeriesChart extends React.Component {
     const motorcyclesArray = [];
 
     data.forEach(result => {
-      carsArray.push([result.time * 1000, result.cars]);
-      bussesArray.push([result.time * 1000, result.busses]);
-      trucksArray.push([result.time * 1000, result.trucks]);
-      motorcyclesArray.push([result.time * 1000, result.motorcycles]);
+      carsArray.push([result.created_at * 1000, result.cars]);
+      bussesArray.push([result.created_at * 1000, result.busses]);
+      trucksArray.push([result.created_at * 1000, result.trucks]);
+      motorcyclesArray.push([result.created_at * 1000, result.motorcycles]);
     });
 
     results.push([carsArray, bussesArray, trucksArray, motorcyclesArray]);
