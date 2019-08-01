@@ -2,13 +2,8 @@ from deeptraffic import app
 import json
 
 
-@app.route("/")
-def hello_backend() -> str:
-    return "HELLOOOOO"
-
-
-@app.route("/day")
-def get_day():
+@app.route("/data")
+def get_data():
     return json.dumps([
         {'time': 1564437600, 'cars': 4, 'trucks': 2, 'busses': 1, 'motorcycles': 0},
         {'time': 1564441200, 'cars': 4, 'trucks': 2, 'busses': 1, 'motorcycles': 0},
