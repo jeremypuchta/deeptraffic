@@ -1,4 +1,6 @@
-from deeptraffic import app
+from flask import request, jsonify
+from deeptraffic import app, db
+from .models import Result
 import json
 
 
@@ -30,3 +32,32 @@ def get_data():
         {'time': 1564516800, 'cars': 0, 'trucks': 5, 'busses': 1, 'motorcycles': 0},
         {'time': 1564520400, 'cars': 0, 'trucks': 5, 'busses': 1, 'motorcycles': 0},
     ])
+
+
+@app.route("/result", methods=['POST'])
+def create_result() -> str:
+    cars = request.form.get('cars')
+    busses = request.form.get('busses')
+    trucks = request.form.get('trucks')
+    motorcycles = request.form.get('motorcycles')
+    try:
+        result = Result(
+            cars=cars,
+            busses=busses,
+            trucks=trucks,
+            motorcycles=motorcycles
+        )
+        db.session.add(result)
+        db.session.commit()
+        return "New Result added to Database."
+    except Exception as e:
+        return (str(e))
+
+
+@app.route("/all", methods=['GET'])
+def get_all():
+    try:
+        results = Result.query.all()
+        return jsonify([r.serialize() for r in results])
+    except Exception as e:
+        return (str(e))

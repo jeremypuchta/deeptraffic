@@ -20,3 +20,12 @@ class Result(db.Model):
 
     def __repr__(self):
         return f"Result('{self.created_at}', '{self.cars}', '{self.busses}', '{self.trucks}', '{self.motorcycles}')"
+
+    def serialize(self):
+        return {
+            'created_at': self.created_at,
+            'cars': self.cars,
+            'busses': self.busses,
+            'trucks': self.trucks,
+            'motorcycles': self.motorcycles
+        }
