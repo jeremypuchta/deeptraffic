@@ -4,7 +4,7 @@ import HighchartsReact from 'highcharts-react-official';
 import styled from 'styled-components';
 
 const ChartsContainer = styled.div`
-  max-width: 1000px;
+  max-width: 1280px;
   margin: auto;
 `;
 
@@ -24,30 +24,63 @@ class TimeSeriesChart extends React.Component {
           { name: 'motorcycles', data: [] }
         ],
         rangeSelector: {
+          enabled: true,
+          allButtonsEnabled: true,
+          buttonTheme: {
+            width: 90,
+            states: {
+              select: {
+                fill: '#ddd'
+              }
+            }
+          },
           buttons: [
-            { type: 'hour', count: 1, text: '1h' },
-            { type: 'day', count: 1, text: '1d' },
-            { type: 'month', count: 1, text: '1m' },
-            { type: 'year', count: 1, text: '1y' },
-            { type: 'all', text: 'All' }
+            { type: 'hour',
+              count: 1,
+              text: 'Hour',
+            },
+            {
+              type: 'day',
+              count: 1,
+              text: 'Day',
+            },
+            {
+              type: 'month',
+              count: 1,
+              text: 'Month',
+            },
+            {
+              type: 'year',
+              count: 1,
+              text: 'Year',
+            },
+            {
+              type: 'all',
+              text: 'Max',
+            }
           ]
         },
         time: {
           useUTC: false
-        }
+        },
+        selected: 1
       }
     };
   }
 
   componentDidMount() {
-    fetch('http://localhost:5000/day')
+    this.visualizeData()
+  }
+
+  visualizeData = () => {
+    fetch('http://localhost:5000/data')
       .then(response => response.json())
       .then(this.processResults)
       .then(this.updateSeries);
-  }
+  };
 
   processResults(data) {
-    const result = [];
+    const results = [];
     const carsArray = [];
     const bussesArray = [];
     const trucksArray = [];
@@ -60,18 +93,18 @@ class TimeSeriesChart extends React.Component {
       motorcyclesArray.push([result.time * 1000, result.motorcycles]);
     });
 
-    result.push([carsArray, bussesArray, trucksArray, motorcyclesArray]);
-    return result;
+    results.push([carsArray, bussesArray, trucksArray, motorcyclesArray]);
+    return results;
   }
 
-  updateSeries = result => {
+  updateSeries = results => {
     this.setState({
       options: {
         series: [
-          { name: 'cars', data: result[0][0] },
-          { name: 'busses', data: result[0][1] },
-          { name: 'trucks', data: result[0][2] },
-          { name: 'motorcycles', data: result[0][3] }
+          { name: 'cars', data: results[0][0] },
+          { name: 'busses', data: results[0][1] },
+          { name: 'trucks', data: results[0][2] },
+          { name: 'motorcycles', data: results[0][3] }
         ]
       }
     });
