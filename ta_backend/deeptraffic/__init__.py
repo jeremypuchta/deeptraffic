@@ -12,3 +12,4 @@ db = SQLAlchemy(app)
 
 from .models import *
 from .routes import *
+from .deamon import *

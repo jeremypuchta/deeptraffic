@@ -16,3 +16,5 @@ RUN apt-get update && apt-get install -y \
     wget
 
 RUN pip install opencv-python
+
+RUN pip install .

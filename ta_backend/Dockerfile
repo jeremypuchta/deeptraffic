@@ -1,10 +1,10 @@
-FROM tensorflow/tensorflow:1.5.0 AS darkflow
+FROM tensorflow/tensorflow:1.5.0
 
-RUN mkdir -p /darkflow
+RUN mkdir -p /usr/src/app
 
-WORKDIR /darkflow
+WORKDIR /usr/src/app
 
-COPY . /darkflow/
+COPY . /usr/src/app/
 
 RUN apt-get update && apt-get install -y \
     python-pip \
@@ -19,24 +19,19 @@ RUN pip install opencv-python
 
 RUN pip install ./darkflow
 
-FROM python:3.7-alpine
+RUN apt-get update && apt-get install -y \
+    postgresql \
+    gcc \
+    python3 \
+    python3-dev \
+    python3-pip \
+    musl-dev \
+    libpq-dev
 
-RUN mkdir -p /usr/src/app
+RUN pip3 install --upgrade pip setuptools
 
-WORKDIR /usr/src/app
-
-COPY . /usr/src/app/
-
-COPY --from=darkflow . /usr/src/app
-
-RUN apk add --no-cache postgresql-dev gcc python3 python3-dev musl-dev && \
-    python3 -m ensurepip && \
-    rm -r /usr/lib/python*/ensurepip && \
-    pip3 install --upgrade pip setuptools && \
-    rm -r /root/.cache && \
-    pip3 install -r requirements.txt
+RUN pip3 install -r requirements.txt
 
 EXPOSE 5000
 
 CMD ["python", "run.py"]
-
