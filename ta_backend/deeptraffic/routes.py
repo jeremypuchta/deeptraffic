@@ -1,6 +1,5 @@
 from flask import jsonify
-from deeptraffic import app
-from ta_backend.dal import db_helper
+from deeptraffic import app, db_helper
 
 
 @app.route("/all", methods=['GET'])

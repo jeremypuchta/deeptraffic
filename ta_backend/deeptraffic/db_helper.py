@@ -1,5 +1,5 @@
 from deeptraffic import db
-from ta_backend.deeptraffic.models import Result
+from .models import Result
 
 
 def save_data(cars, busses, trucks, motorcycles):

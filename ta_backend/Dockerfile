@@ -15,6 +15,10 @@ RUN apt-get update && apt-get install -y \
     libxrender-dev \
     wget
 
+RUN pip install opencv-python
+
+RUN pip install ./darkflow
+
 FROM python:3.7-alpine
 
 RUN mkdir -p /usr/src/app
