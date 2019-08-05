@@ -19,9 +19,6 @@ class Result(db.Model):
         self.trucks = trucks
         self.motorcycles = motorcycles
 
-    def __repr__(self):
-        return f"Result('{self.created_at}', '{self.cars}', '{self.busses}', '{self.trucks}', '{self.motorcycles}')"
-
     def serialize(self):
         return {
             'created_at': self.created_at,

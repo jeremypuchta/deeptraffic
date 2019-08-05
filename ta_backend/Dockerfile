@@ -15,6 +15,8 @@ RUN apt-get update && apt-get install -y \
     libxrender-dev \
     wget
 
+RUN pip install --upgrade pip setuptools
+
 RUN pip install opencv-python
 
 RUN pip install ./darkflow
@@ -22,15 +24,9 @@ RUN pip install ./darkflow
 RUN apt-get update && apt-get install -y \
     postgresql \
     gcc \
-    python3 \
-    python3-dev \
-    python3-pip \
-    musl-dev \
-    libpq-dev
+    musl-dev
 
-RUN pip3 install --upgrade pip setuptools
-
-RUN pip3 install -r requirements.txt
+RUN pip install -r requirements.txt
 
 EXPOSE 5000
 

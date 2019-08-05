@@ -1,8 +1,5 @@
-import sys
-sys.path.append('..')
-
-from darkflow.darkflow.cli import cliHandler
-from .network_helper import get_image
+from darkflow.cli import cliHandler
+from network_helper import get_image
 from apscheduler.schedulers.background import BackgroundScheduler
 from pytz import utc
 

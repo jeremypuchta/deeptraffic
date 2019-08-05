@@ -1,7 +1,6 @@
 from .defaults import argHandler #Import the default arguments
 import os
 from .net.build import TFNet
-from ta_backend.dal.network_helper import get_image
 
 def cliHandler():
     args = ['/usr/local/bin/flow', '--pbLoad', 'built_graph/tiny-yolo-voc-4c.pb', '--metaLoad', 'built_graph/tiny-yolo-voc-4c.meta', '--imgdir', 'sample_img/']
