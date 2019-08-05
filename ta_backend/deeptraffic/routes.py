@@ -1,11 +1,12 @@
 from flask import jsonify
-from deeptraffic import app, db_helper
+from deeptraffic import app
+from .db_helper import get_all_data
 
 
 @app.route("/all", methods=['GET'])
 def get_all():
     try:
-        results = db_helper.get_all_data()
+        results = get_all_data()
         return jsonify([r.serialize() for r in results])
     except Exception as e:
-        return (str(e))
+        return str(e)
