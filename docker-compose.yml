@@ -21,9 +21,9 @@ services:
     ports:
       - '5432:5432'
     environment:
-      POSTGRES_USER: "bdprak"
-      POSTGRES_PASSWORD: "admin"
-      POSTGRES_DB: "deeptraffic"
+      POSTGRES_USER=bdprak
+      POSTGRES_PASSWORD=admin
+      POSTGRES_DB=deeptraffic
     volumes:
       - pgdata:/var/lib/postgresql/data
 
