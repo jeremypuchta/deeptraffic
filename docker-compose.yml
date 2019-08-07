@@ -21,11 +21,9 @@ services:
     ports:
       - '5432:5432'
     environment:
-      POSTGRES_HOST: "localhost"
-      POSTGRES_PORT: "5432"
-      POSTGRES_USERNAME: "bdprak"
+      POSTGRES_USER: "bdprak"
       POSTGRES_PASSWORD: "admin"
-      POSTGRES_DATABASE: "deeptraffic"
+      POSTGRES_DB: "deeptraffic"
     volumes:
       - pgdata:/var/lib/postgresql/data
 
