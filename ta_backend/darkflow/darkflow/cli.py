@@ -3,7 +3,7 @@ import os
 from .net.build import TFNet
 
 def cliHandler():
-    args = ['/usr/local/bin/flow', '--pbLoad', './darkflow/built_graph/tiny-yolo-voc-4c.pb', '--metaLoad', './darkflow/built_graph/tiny-yolo-voc-4c.meta', '--imgdir', './darkflow/sample_img/']
+    args = ['/usr/local/bin/flow', '--pbLoad', './darkflow/built_graph/tiny-yolo-voc-4c.pb', '--metaLoad', './darkflow/built_graph/tiny-yolo-voc-4c.meta', '--imgdir', './darkflow/sample_img/', '--json']
     #print(args)
     FLAGS = argHandler()
     FLAGS.setDefaults()

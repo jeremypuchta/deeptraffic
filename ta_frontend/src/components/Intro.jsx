@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import moment from 'moment';
 
 const StyledIntroContainer = styled.div`
   width: 1024px;
@@ -29,20 +30,22 @@ const StyledMethodologyLink = styled(Link)`
   color: #008fd5;
 `;
 
-const Intro = () => {
-  return (
-    <StyledIntroContainer>
-      <StyledTimestamp>Updated Jul. 1, 2019 at 11:04 AM</StyledTimestamp>
-      <StyledTitle>
-        What is the traffic situation like on the Leipziger Ring?
-      </StyledTitle>
-      <StyledSubtitle>
-        An updated calculation of the traffic situation around the Leipziger
-        Ring based on data gathered from publicly available webcams.&nbsp;
-        <StyledMethodologyLink to="/about">How this works »</StyledMethodologyLink>
-      </StyledSubtitle>
-    </StyledIntroContainer>
-  );
-};
+class Intro extends React.Component {
+  render() {
+    return (
+      <StyledIntroContainer>
+        <StyledTimestamp>Updated Jul. 1, 2019 at 11:04 AM</StyledTimestamp>
+        <StyledTitle>
+          What is the traffic situation like on the Leipziger Ring?
+        </StyledTitle>
+        <StyledSubtitle>
+          An updated calculation of the traffic situation around the Leipziger
+          Ring based on data gathered from publicly available webcams.&nbsp;
+          <StyledMethodologyLink to="/about">How this works »</StyledMethodologyLink>
+        </StyledSubtitle>
+      </StyledIntroContainer>
+    );
+  }
+}
 
 export default Intro;

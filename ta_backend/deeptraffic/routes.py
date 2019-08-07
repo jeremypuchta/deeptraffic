@@ -1,6 +1,6 @@
 from flask import jsonify
 from deeptraffic import app
-from .db_helper import get_all_data
+from .db_helper import *
 
 
 @app.route("/all", methods=['GET'])
@@ -10,3 +10,8 @@ def get_all():
         return jsonify([r.serialize() for r in results])
     except Exception as e:
         return str(e)
+
+
+@app.route("/latest", methods=['GET'])
+def get_last_update():
+    return get_latest()

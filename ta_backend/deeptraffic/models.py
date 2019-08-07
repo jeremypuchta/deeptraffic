@@ -12,8 +12,8 @@ class Result(db.Model):
     trucks = db.Column(db.SMALLINT)
     motorcycles = db.Column(db.SMALLINT)
 
-    def __init__(self, cars, busses, trucks, motorcycles):
-        self.created_at = int(time())
+    def __init__(self, created_at, cars, busses, trucks, motorcycles):
+        self.created_at = created_at
         self.cars = cars
         self.busses = busses
         self.trucks = trucks

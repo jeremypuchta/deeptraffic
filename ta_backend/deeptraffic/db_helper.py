@@ -2,14 +2,8 @@ from deeptraffic import db
 from .models import Result
 
 
-def save_data(cars, busses, trucks, motorcycles):
+def save_data(result):
     try:
-        result = Result(
-            cars=cars,
-            busses=busses,
-            trucks=trucks,
-            motorcycles=motorcycles
-        )
         db.session.add(result)
         db.session.commit()
         return "New Result added to Database."
@@ -19,3 +13,8 @@ def save_data(cars, busses, trucks, motorcycles):
 
 def get_all_data():
     return Result.query.all()
+
+
+def get_latest():
+    result = db.session.query(Result).order_by(Result.id.desc()).first()
+    return str(result.created_at)
