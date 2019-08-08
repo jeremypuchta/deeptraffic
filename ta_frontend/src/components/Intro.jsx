@@ -55,15 +55,6 @@ class Intro extends React.Component {
       .then(() => this.setState({ date, time }));
   }
 
-  getDate(unixtime) {
-    this.setState(moment.unix(unixtime).format('MMM. D, YYYY'));
-  }
-
-  getTime(unixtime) {
-    const time = moment.unix(unixtime).format('HH:mm A')
-    this.setState({time: time});
-  }
-
   render() {
     return (
       <StyledIntroContainer>
