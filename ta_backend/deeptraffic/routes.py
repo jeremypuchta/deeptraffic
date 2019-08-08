@@ -10,3 +10,8 @@ def get_all():
         return jsonify([r.serialize() for r in results])
     except Exception as e:
         return str(e)
+
+
+@app.route("/latest", methods=['GET'])
+def get_last_update():
+    return get_latest()

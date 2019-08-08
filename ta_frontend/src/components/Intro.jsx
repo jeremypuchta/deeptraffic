@@ -10,6 +10,13 @@ const StyledIntroContainer = styled.div`
   line-height: 1.4;
 `;
 
+const StyledTimestamp = styled.p`
+  font-family: monospace;
+  color: #999;
+  text-transform: uppercase;
+  margin: 0;
+`;
+
 const StyledTitle = styled.h1`
   margin: 0;
 `;
@@ -24,9 +31,45 @@ const StyledMethodologyLink = styled(Link)`
 `;
 
 class Intro extends React.Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {};
+  }
+
+  componentDidMount() {
+    this.getLatestUpdate();
+  }
+
+  getLatestUpdate() {
+    let date;
+    let time;
+    fetch('http://localhost:5000/latest')
+      .then(response => response.text())
+      .then(function(unixtime) {
+        const momentObject = moment.unix(unixtime);
+        date = momentObject.format('MMM. D, YYYY');
+        time = momentObject.format('HH:mm A');
+      })
+      .then(() => this.setState({ date, time }));
+  }
+
+  getDate(unixtime) {
+    this.setState(moment.unix(unixtime).format('MMM. D, YYYY'));
+  }
+
+  getTime(unixtime) {
+    const time = moment.unix(unixtime).format('HH:mm A')
+    this.setState({time: time});
+  }
+
   render() {
     return (
       <StyledIntroContainer>
+        <StyledTimestamp>
+          Updated { this.state.date } at { this.state.time }
+        </StyledTimestamp>
         <StyledTitle>
           What is the traffic situation like on the Leipziger Ring?
         </StyledTitle>
