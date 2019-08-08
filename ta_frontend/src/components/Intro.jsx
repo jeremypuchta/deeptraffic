@@ -10,13 +10,6 @@ const StyledIntroContainer = styled.div`
   line-height: 1.4;
 `;
 
-const StyledTimestamp = styled.p`
-  font-family: monospace;
-  color: #999;
-  text-transform: uppercase;
-  margin: 0;
-`;
-
 const StyledTitle = styled.h1`
   margin: 0;
 `;
@@ -31,25 +24,9 @@ const StyledMethodologyLink = styled(Link)`
 `;
 
 class Intro extends React.Component {
-
-  getLatestUpdate() {
-    const dict = {};
-    fetch('http://localhost:5000/latest').then(function(unixtime) {
-      const momentObject = moment.unix(unixtime);
-      dict.date = momentObject.format('MMM. D, YYYY');
-      dict.time = momentObject.format('HH:mm A');
-    });
-    return dict;
-  }
-
   render() {
-    const timedict = this.getLatestUpdate();
-
     return (
       <StyledIntroContainer>
-        <StyledTimestamp>
-          Updated {timedict.date} at {timedict.time}
-        </StyledTimestamp>
         <StyledTitle>
           What is the traffic situation like on the Leipziger Ring?
         </StyledTitle>
