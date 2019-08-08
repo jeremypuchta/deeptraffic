@@ -26,6 +26,11 @@ services:
       - POSTGRES_DB=deeptraffic
     volumes:
       - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   backend:
     container_name: 'backend_container'
@@ -36,7 +41,8 @@ services:
     volumes:
       - ./ta_backend:/usr/src/app
     depends_on:
-      - postgres
+      postgres:
+        condition: service_healthy
 
 volumes:
   pgdata:
