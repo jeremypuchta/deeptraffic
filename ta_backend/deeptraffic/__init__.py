@@ -12,7 +12,7 @@ db = SQLAlchemy(app)
 
 from .models import *
 from .routes import *
-from .deamon import *
-
 
 db.create_all()
+
+from .deamon import *

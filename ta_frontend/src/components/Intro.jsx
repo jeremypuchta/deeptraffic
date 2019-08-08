@@ -31,17 +31,34 @@ const StyledMethodologyLink = styled(Link)`
 `;
 
 class Intro extends React.Component {
+
+  getLatestUpdate() {
+    const dict = {};
+    fetch('http://localhost:5000/latest').then(function(unixtime) {
+      const momentObject = moment.unix(unixtime);
+      dict.date = momentObject.format('MMM. D, YYYY');
+      dict.time = momentObject.format('HH:mm A');
+    });
+    return dict;
+  }
+
   render() {
+    const timedict = this.getLatestUpdate();
+
     return (
       <StyledIntroContainer>
-        <StyledTimestamp>Updated Jul. 1, 2019 at 11:04 AM</StyledTimestamp>
+        <StyledTimestamp>
+          Updated {timedict.date} at {timedict.time}
+        </StyledTimestamp>
         <StyledTitle>
           What is the traffic situation like on the Leipziger Ring?
         </StyledTitle>
         <StyledSubtitle>
           An updated calculation of the traffic situation around the Leipziger
           Ring based on data gathered from publicly available webcams.&nbsp;
-          <StyledMethodologyLink to="/about">How this works »</StyledMethodologyLink>
+          <StyledMethodologyLink to="/about">
+            How this works »
+          </StyledMethodologyLink>
         </StyledSubtitle>
       </StyledIntroContainer>
     );
