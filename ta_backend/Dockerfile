@@ -28,6 +28,8 @@ RUN apt-get update && apt-get install -y \
 
 RUN pip install -r requirements.txt
 
+RUN mkdir ./darkflow/sample_img
+
 EXPOSE 5000
 
 CMD ["python", "run.py"]
